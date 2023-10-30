@@ -20,3 +20,5 @@ export default function RootLayout({
     </html>
   )
 }
+// layout files are group files which reflects the entire project.
+// layout files are used to output reuseable components, it is not a good practice to use layout file to render something 

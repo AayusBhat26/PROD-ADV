@@ -1,0 +1,28 @@
+
+in this project i am using app router i.e. on the basis of creation of the folders and files, our routes would be defined, 
+instead of explicit creation of routes, we will create folder structures for doing the routing to our pages. 
+
+every folder and file would be considered as a route and a web page so creating resuable components instead it would not be a great option.
+
+if in any case we want to create the components folder instead the app folder, we can do it by adding an underscore in front of the name of the folder and then creating the remaining component or structure inside of it.
+
+
+
+route groups 
+-> it is an another type of folder. 
+-> it will have no affect url.
+-> it is an orgranizational folder.
+-> we can add its own layout which might have affect on other pages.
+-> route groups are created by keeping the name of the folder inside a pair of braces.
+-> any folder created inside the route groups or organizational folders will be directly accessible 
+-> for example, here we have (auth) as a route group and isnide that i've created another route group which (routes) now (routes) will have further two routes which are login and register, which are not directly accessible 
+
+
+-- as mentioned above, organizational folders can have layout files.
+each layout will have a chidlren which is a react.reactnode as children.
+
+organizational folders can have layout files these layout files are implemented to all the children of it, these children are nothung but the routes that are created inside of it./
+
+
+summary => route groups or organizational folders are created by parathensis, these will have no affct on the url, if there exist children which are normal route i.e. folder defined without the parahtnesis, then it will affect the route. exmaple: auth login
+now, each route group can have a layout, this layout would be implemeted directly to the children.
